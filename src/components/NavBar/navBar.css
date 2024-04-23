@@ -1,0 +1,138 @@
+.gpt3__navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+    padding: 2rem 3rem;
+}
+.gpt3__navBar-links{
+flex: 1;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.gpt3__navBar-links_logo{
+ display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 1rem;
+
+}
+.gpt3__navBar-links_logo img{
+   width: 62.54px;
+   height: 16.02px;
+   margin-right: 1rem;
+    
+    }
+
+.gpt3__navBar-links_container{
+    display: flex;
+    flex-direction: row;
+    }
+
+.gpt3__navBar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gpt3__navBar-links_container p 
+,.gpt3__navBar-sign p 
+, .gpt3__navBar-menu_container p{
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+ font-stretch: extra-condensed;
+  text-transform: capitalize;
+
+    align-self: center;
+  
+  margin: 0 0.75rem;
+  cursor: pointer;
+}
+.gpt3__navBar-sign button ,
+.gpt3__navBar-menu_container button{
+    padding: 0.5rem 0.5rem;
+    color: #fff;
+    background-color: #ff4820;
+    border-radius: 5px;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+outline: none;
+cursor: pointer;
+
+}
+.gpt3__navBar-menu{
+    margin-left: 0.5rem;
+    display: none;
+    position: relative;
+}
+
+.gpt3__navBar-menu svg{
+    cursor: pointer;
+
+}
+.gpt3__navBar-menu_container{
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background-color: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+ font-size: 14px;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-height: 210px;
+    border-radius: 5px;
+  box-shadow: 0 0 5 rgba(000, 0, 0, 0.2);
+}
+.gpt3__navBar-menu_container p {
+    margin: 1rem 0;
+}
+.gpt3__navBar-links_container-links-sign{
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .gpt3__navBar-links_container{
+        display: none;
+    }
+
+    .gpt3__navBar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  
+
+    .gpt3__navBar{
+        padding: 2rem 4rem;
+    }
+}
+@media screen and (max-width:550px) {
+  
+
+    .gpt3__navBar{
+        padding: 2rem;
+
+    }
+    .gpt3__navBar-menu_container-links-sign{
+        display: block;
+    }
+    .gpt3__navBar-sign{
+         display: none;
+    }
+.gpt3__navBar-menu_container{
+    top:20px;
+}
+
+}
