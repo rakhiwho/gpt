@@ -1,0 +1,11 @@
+{
+    "rules": {
+      "indentation": [2, { "except": ["value"] }],
+      "number-leading-zero": "always",
+      "selector-class-pattern": ["^[a-z0-9\\-]+$", { "message": "Class names should be kebab-case" }],
+      "function-no-unknown": true,
+      "unit-no-unknown": true,
+      "no-duplicate-selectors": true
+    }
+  }
+  

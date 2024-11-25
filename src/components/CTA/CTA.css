@@ -1,111 +1,121 @@
-.gpt3__Cta{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-radius: 3rem;
-    background: linear-gradient(90deg, #ed5630, #b16c37, #a07f40);
-   margin: 2rem ;
-    height: 10vw;
-   width: 90vw;
+.gpt3__Cta {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-radius: 3rem;
+  background: linear-gradient(90deg, #ed5630, #b16c37, #a07f40);
+  margin: 2rem;
+  height: 10vw;
+  width: 90vw;
 }
-.gpt3__Cta-container{
-    max-height: 12vw;
-    flex: 1;
-    margin: 1.5rem  3rem 2rem;
+
+.gpt3__Cta-container {
+  max-height: 12vw;
+  flex: 1;
+  margin: 1.5rem 3rem 2rem;
 }
-.gpt3__Cta-container p{
-    color: var(--color-bg);
-    font-family: var(--font-family);
+
+.gpt3__Cta-container p {
+  color: var(--color-bg);
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gpt3__Cta-container h3 {
+  color: var(--color-bg);
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.gpt3__Cta-button {
+  max-height: 8vw;
+  margin: 2rem;
+}
+
+.gpt3__Cta-button button {
+  border: none;
+  border-radius: 1rem;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-bg);
+  color: white;
+  font-family: var(--font-family);
+  text-transform: capitalize;
+}
+
+@media screen and (width <=850px) {
+  .gpt3__Cta {
+    height: 15vh;
+  }
+
+  .gpt3__Cta-container {
+    margin: 1rem 1.5rem 2rem;
+  }
+
+  .gpt3__Cta-button {
+    margin: 1rem 1rem 2rem;
+  }
+
+  .gpt3__Cta-container h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .gpt3__Cta-container p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media screen and (width <=1080px) {
+  .gpt3__Cta-button {
+    margin: 1rem;
+    align-content: center;
+    height: 5vh;
+  }
+
+  .gpt3__Cta-container {
+    max-height: 25vh;
+    margin: 1rem;
+  }
+
+  .gpt3__Cta-container h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .gpt3__Cta-container p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (width <=850px) {
+  .gpt3__Cta-button {
+    margin: 1.5rem;
+  }
+
+  .gpt3__Cta-container h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .gpt3__Cta-container p {
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
+
+@media screen and (width <=850px) {
+  .gpt3__Cta-button button {
     font-size: 14px;
-    font-weight: 600;
-}
-.gpt3__Cta-container h3{
-    color: var(--color-bg);
-    font-family: var(--font-family);
-    font-size: 24px;
-    font-weight: 800;
-}
-.gpt3__Cta-button{
-    max-height: 8vw;
-    margin: 2rem 2rem 2rem 2rem;
-}
-.gpt3__Cta-button button{
-    border: none;
-    border-radius: 1rem;
-    font-size: 16px;
-    padding: 0.5rem 1rem;
-    background-color: var(--color-bg);
-    color: white;
-    font-family: var(--font-family);
-    text-transform: capitalize;
-}
-@media screen  and (max-width:850px){
-    .gpt3__Cta{
-        height: 15vh;
-      
-    }
-    .gpt3__Cta-container{
-        margin: 1rem 1.5rem 2rem;
-    }
-    
-    .gpt3__Cta-button{
-        margin: 1rem 1rem 2rem;
-      
-    }
-    .gpt3__Cta-container h3{
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .gpt3__Cta-container p{
-        font-size: 10px;
-        line-height: 12px;
-    }
+  }
 
-}
-@media screen  and (max-width:1080px){
-    
-    .gpt3__Cta-button{
-        margin: 1rem;
-        align-content: center;
-        height: 5vh;
-    }
-    .gpt3__Cta-container {
-        max-height: 25vh;
-        margin: 1rem;
-    }
-    .gpt3__Cta-container h3{
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .gpt3__Cta-container p{
-        font-size: 12px;
-        line-height: 14px;
-    }
-}
-@media screen  and (max-width:850px){
-     .gpt3__Cta-button {
-        margin: 1.5rem ;
-     }
-    .gpt3__Cta-container h3{
-        font-size: 18px;
-        line-height: 20px;
-    }
-    .gpt3__Cta-container p{
-        font-size: 8px;
-        line-height: 12px;
-    }
-
-}
-
-@media screen  and (max-width:850px){
-    .gpt3__Cta-button button{
-        font-size: 14px;
-    }
-    .gpt3__Cta-container h3{
-        font-size: 14px;
-        line-height: 16px;
-    }
-   
+  .gpt3__Cta-container h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

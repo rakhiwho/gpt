@@ -1,99 +1,106 @@
-
-.gpt3__possibilities{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.gpt3__possibilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-.gpt3__possibilities-img{
+
+.gpt3__possibilities-img {
+  max-width: 50vw;
+}
+
+.gpt3__possibilities-img img {
+  max-width: fit-content;
+  width: 40vw;
+  height: 40vw;
+}
+
+.gpt3__possibilities-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gpt3__possibilities-container h1 {
+  margin-bottom: 3rem;
+}
+
+.gpt3__possibilities-container p {
+  margin: 1rem 0;
+  color: #81afdd;
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 1.5 rem;
+  text-transform: capitalize;
+}
+
+.gpt3__possibilities-container h3 {
+  margin: 1rem 0;
+  background: linear-gradient(90deg, #ed5630, #b16c37, #a07f40); /* For Safari/Chrome/iOS */
+  background-clip: text;
+  color: transparent;
+  font-weight: 400;
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 1.5 rem;
+  margin-left: 0;
+  text-transform: capitalize;
+}
+
+@media screen and (width <=850px) {
+  .gpt3__possibilities-img img {
     max-width: 50vw;
+    max-height: 50vw;
+  }
+
+  .gpt3__possibilities-container h1 {
+    font-size: 34px;
+    line-height: 40px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .gpt3__possibilities-container p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 1rem;
+  }
+
+  .gpt3__possibilities-container h3 {
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 1rem;
+  }
 }
-.gpt3__possibilities-img img{
-    max-width: fit-content;
-    width: 40vw;
-    height: 40vw;
-}
-.gpt3__possibilities-container{
-    display: flex;
-    align-items: center;
+
+@media screen and (width <=850px) {
+  .gpt3__possibilities {
     flex-direction: column;
+  }
 
-}
- .gpt3__possibilities-container h1{
- margin-bottom: 3rem;
- }
-.gpt3__possibilities-container p{
-    margin:  1rem 0;
-    color: #81AFDD;
+  .gpt3__possibilities-img img {
+    margin: 1rem 2rem 2rem;
+    max-width: 80vh;
+    max-height: 80vh;
+  }
+
+  .gpt3__possibilities-container h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .gpt3__possibilities-container p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 1rem;
+  }
+
+  .gpt3__possibilities-container h3 {
     font-size: 10px;
-    font-family: var(--font-family);
-    font-size: 20px;
-    line-height: 27px;
-    margin-top: 1.5 rem;
-    text-transform: capitalize;
-}
-
-.gpt3__possibilities-container h3{
-    margin:  1rem 0;
-    background: linear-gradient(90deg, #ed5630, #b16c37, #a07f40);
-    -webkit-background-clip: text; /* For Safari/Chrome/iOS */
-    background-clip: text;
-    color: transparent;
-   font-weight:400 ;
-    font-size: 10px;
-    font-family: var(--font-family);
-    font-size: 20px;
-    line-height: 27px;
-    margin-top: 1.5 rem;
-    margin-left: 0;
-    text-transform: capitalize;
-}
-@media screen and (max-width:850px){
-    .gpt3__possibilities-img img{
-        max-width: 50vw;
-        max-height: 50vw;
-
-    }
-    .gpt3__possibilities-container h1{
-        font-size: 34px;
-        line-height: 40px;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-    }
-    .gpt3__possibilities-container p{
-        font-size: 14px;
-        line-height: 18px;
-        margin-left: 1rem;
-    }
-    .gpt3__possibilities-container h3{
-        font-size: 10px;
-        line-height: 12px;
-        margin-left: 1rem;
-    }
-}
-@media screen and (max-width:850px){
-    .gpt3__possibilities{
-        flex-direction: column;
-    }
-    .gpt3__possibilities-img img{
-         margin:1rem 2rem 2rem 2rem;
-        max-width: 80vh;
-        max-height: 80vh;
-
-    }
-    .gpt3__possibilities-container h1{
-        font-size: 24px;
-        line-height: 30px;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-    }
-    .gpt3__possibilities-container p{
-        font-size: 12px;
-        line-height: 16px;
-        margin-left: 1rem;
-    }
-    .gpt3__possibilities-container h3{
-        font-size: 10px;
-        line-height: 12px;
-        margin-left: 1rem;
-    }
+    line-height: 12px;
+    margin-left: 1rem;
+  }
 }

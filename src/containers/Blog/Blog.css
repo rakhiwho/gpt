@@ -1,89 +1,78 @@
-  
-  .gpt3__blog{
-    display: flex;
-   align-items: center;
-   flex-direction: column;
-   
+.gpt3__blog {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.gpt3__blog-header{
-    background: linear-gradient(90deg, #ed5630, #b16c37, #a07f40);
-    -webkit-background-clip: text; /* For Safari/Chrome/iOS */
-    background-clip: text;
-    color: transparent;
-   
-    font-family: var(--font-family);
-    font-weight: 800;
-    font-size: 62px;
-    text-transform: capitalize;
-    line-height: 75px;
-    letter-spacing:  -0.04em;    
+.gpt3__blog-header {
+  background: linear-gradient(90deg, #ed5630, #b16c37, #a07f40); /* For Safari/Chrome/iOS */
+  background-clip: text;
+  color: transparent;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  text-transform: capitalize;
+  line-height: 75px;
+  letter-spacing: -0.04em;
 }
-.gpt3__blog-footer{
-    height: 100%;
-    width: 100%;
+
+.gpt3__blog-footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: rows;
+  margin-top: 4rem;
+}
+
+.groupA {
+  margin-right: 2rem;
+  flex: 0.75;
+}
+
+.groupB {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (width <=1024px) {
+  .gpt3__blog-footer {
     display: flex;
-    flex-direction: rows;
+    flex-direction: column;
     margin-top: 4rem;
-    
-}
-.groupA{
-    margin-right: 2rem;
-    flex:0.75;
- 
-}
+  }
 
-.groupB{
-   flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2 ,1fr);
-    grid-gap: 2rem;
-
-
-}
-
-@media screen and (max-width:1024px) {
-    .gpt3__blog-footer{
-        
-        display: flex;
-        flex-direction: column;
-        margin-top: 4rem;
-        
-    }
-     
-  .groupA{
+  .groupA {
     margin-right: 0;
     margin-bottom: 1.5rem;
   }
-  .groupB{
+
+  .groupB {
     grid-gap: 1.5rem;
   }
+}
+
+@media screen and (width <= 700px) {
+  .gpt3__blog-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
   }
-  
-  @media screen and (max-width: 700px) {
-    
-    .gpt3__blog-footer{
-        
-        display: flex;
-        flex-direction: column;
-        margin-top: 4rem;
-        
-    }
-     
-  .groupA{
+
+  .groupA {
     margin-right: 0;
     margin-bottom: 1.5rem;
   }
-  .groupB{
+
+  .groupB {
     grid-gap: 1.5rem;
   }
+}
+
+@media screen and (width <=550px) {
+  .groupB {
+    display: flex;
+    flex-direction: column;
   }
-  @media screen and (max-width:550px) {
-    
-  
-    .groupB{
-        display: flex;
-        flex-direction: column;
-      }
-  
-  }
+}
